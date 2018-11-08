@@ -1,4 +1,4 @@
-package dtu.test;
+package dtu.significance;
 
 import java.io.OutputStream;
 import java.io.PrintStream;

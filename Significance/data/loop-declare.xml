@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model>
+   <assignment language="ConDec" name="new model">
+      <activitydefinitions>
+         <activity id="1" name="B" />
+         <activity id="2" name="A" />
+         <activity id="3" name="C" />
+         <activity id="4" name="E" />
+         <activity id="5" name="F" />
+         <activity id="6" name="G" />
+      </activitydefinitions>
+      <constraintdefinitions>
+         <constraint id="1" mandatory="true">
+            <condition />
+            <name>co-existence</name>
+            <template>
+               <description>If A happen (at least once) then B has to have (at least once) happpend before of has to happen after A. And vice versa.</description>
+               <display>co-existence</display>
+               <name>co-existence</name>
+               <text>( ( &lt;&gt;("A") -&gt; &lt;&gt;( "B" ) ) /\ ( &lt;&gt;("B") -&gt; &lt;&gt;( "A" ) )  )</text>
+               <parameters>
+                  <parameter branchable="true" id="1" name="A">
+                     <graphical>
+                        <style number="1" />
+                        <begin fill="true" style="5" />
+                        <middle fill="false" style="0" />
+                        <end fill="false" style="0" />
+                     </graphical>
+                  </parameter>
+                  <parameter branchable="true" id="2" name="B">
+                     <graphical>
+                        <style number="1" />
+                        <begin fill="true" style="5" />
+                        <middle fill="false" style="0" />
+                        <end fill="false" style="0" />
+                     </graphical>
+                  </parameter>
+               </parameters>
+               <statemessages>
+                  <message state="VIOLATED">VIOLATED undefined</message>
+                  <message state="SATISFIED">SATISFIED undefined</message>
+                  <message state="VIOLATED_TEMPORARY">VIOLATED_TEMPORARY undefined</message>
+               </statemessages>
+            </template>
+            <constraintparameters>
+               <parameter templateparameter="1">
+                  <branches>
+                     <branch name="G" />
+                  </branches>
+               </parameter>
+               <parameter templateparameter="2">
+                  <branches>
+                     <branch name="A" />
+                  </branches>
+               </parameter>
+            </constraintparameters>
+         </constraint>
+         <constraint id="2" mandatory="true">
+            <condition />
+            <name>co-existence</name>
+            <template>
+               <description>If A happen (at least once) then B has to have (at least once) happpend before of has to happen after A. And vice versa.</description>
+               <display>co-existence</display>
+               <name>co-existence</name>
+               <text>( ( &lt;&gt;("A") -&gt; &lt;&gt;( "B" ) ) /\ ( &lt;&gt;("B") -&gt; &lt;&gt;( "A" ) )  )</text>
+               <parameters>
+                  <parameter branchable="true" id="1" name="A">
+                     <graphical>
+                        <style number="1" />
+                        <begin fill="true" style="5" />
+                        <middle fill="false" style="0" />
+                        <end fill="false" style="0" />
+                     </graphical>
+                  </parameter>
+                  <parameter branchable="true" id="2" name="B">
+                     <graphical>
+                        <style number="1" />
+                        <begin fill="true" style="5" />
+                        <middle fill="false" style="0" />
+                        <end fill="false" style="0" />
+                     </graphical>
+                  </parameter>
+               </parameters>
+               <statemessages>
+                  <message state="VIOLATED">VIOLATED undefined</message>
+                  <message state="SATISFIED">SATISFIED undefined</message>
+                  <message state="VIOLATED_TEMPORARY">VIOLATED_TEMPORARY undefined</message>
+               </statemessages>
+            </template>
+            <constraintparameters>
+               <parameter templateparameter="1">
+                  <branches>
+                     <branch name="F" />
+                  </branches>
+               </parameter>
+               <parameter templateparameter="2">
+                  <branches>
+                     <branch name="E" />
+                  </branches>
+               </parameter>
+            </constraintparameters>
+         </constraint>
+         <constraint id="3" mandatory="true">
+            <condition />
+            <name>co-existence</name>
+            <template>
+               <description>If A happen (at least once) then B has to have (at least once) happpend before of has to happen after A. And vice versa.</description>
+               <display>co-existence</display>
+               <name>co-existence</name>
+               <text>( ( &lt;&gt;("A") -&gt; &lt;&gt;( "B" ) ) /\ ( &lt;&gt;("B") -&gt; &lt;&gt;( "A" ) )  )</text>
+               <parameters>
+                  <parameter branchable="true" id="1" name="A">
+                     <graphical>
+                        <style number="1" />
+                        <begin fill="true" style="5" />
+                        <middle fill="false" style="0" />
+                        <end fill="false" style="0" />
+                     </graphical>
+                  </parameter>
+                  <parameter branchable="true" id="2" name="B">
+                     <graphical>
+                        <style number="1" />
+                        <begin fill="true" style="5" />
+                        <middle fill="false" style="0" />
+                        <end fill="false" style="0" />
+                     </graphical>
+                  </parameter>
+               </parameters>
+               <statemessages>
+                  <message state="VIOLATED">VIOLATED undefined</message>
+                  <message state="SATISFIED">SATISFIED undefined</message>
+                  <message state="VIOLATED_TEMPORARY">VIOLATED_TEMPORARY undefined</message>
+               </statemessages>
+            </template>
+            <constraintparameters>
+               <parameter templateparameter="1">
+                  <branches>
+                     <branch name="B" />
+                  </branches>
+               </parameter>
+               <parameter templateparameter="2">
+                  <branches>
+                     <branch name="C" />
+                  </branches>
+               </parameter>
+            </constraintparameters>
+         </constraint>
+      </constraintdefinitions>
+      <graphical>
+         <activities>
+            <cell height="30.0" id="1" width="50.0" x="349.2451133513894" y="31.794375146878423" />
+            <cell height="30.0" id="2" width="50.0" x="202.59468225373547" y="163.1381770037857" />
+            <cell height="30.0" id="3" width="50.0" x="75.26818123397135" y="319.90574883497214" />
+            <cell height="30.0" id="4" width="50.0" x="75.26818123397135" y="319.90574883497214" />
+            <cell height="30.0" id="5" width="50.0" x="75.26818123397135" y="319.90574883497214" />
+            <cell height="30.0" id="6" width="50.0" x="75.26818123397135" y="319.90574883497214" />
+         </activities>
+         <constraints>
+            <cell height="1.0" id="1" width="1.0" x="304.5853995260316" y="91.1083133481936" />
+            <cell height="1.0" id="2" width="1.0" x="151.9063090020308" y="268.24116966590907" />
+            <cell height="1.0" id="3" width="1.0" x="111.98972104962837" y="158.56657020213225" />
+         </constraints>
+      </graphical>
+   </assignment>
+</model>
